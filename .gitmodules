@@ -1,0 +1,44 @@
+[submodule "vendor/anatomy"]
+	path = vendor/anatomy
+	url = https://github.com/wheresryan22/anatomy.git
+	shallow = true
+[submodule "vendor/archify"]
+	path = vendor/archify
+	url = https://github.com/tt-a1i/archify.git
+	shallow = true
+[submodule "vendor/caveman"]
+	path = vendor/caveman
+	url = https://github.com/JuliusBrussee/caveman.git
+	shallow = true
+[submodule "vendor/diagram-design"]
+	path = vendor/diagram-design
+	url = https://github.com/cathrynlavery/diagram-design.git
+	shallow = true
+[submodule "vendor/hallmark"]
+	path = vendor/hallmark
+	url = https://github.com/Nutlope/hallmark.git
+	shallow = true
+[submodule "vendor/impeccable"]
+	path = vendor/impeccable
+	url = https://github.com/pbakaus/impeccable.git
+	shallow = true
+[submodule "vendor/security-audit-skill"]
+	path = vendor/security-audit-skill
+	url = https://github.com/cloudflare/security-audit-skill.git
+	shallow = true
+[submodule "vendor/stop-slop"]
+	path = vendor/stop-slop
+	url = https://github.com/hardikpandya/stop-slop.git
+	shallow = true
+[submodule "vendor/superpowers"]
+	path = vendor/superpowers
+	url = https://github.com/obra/superpowers.git
+	shallow = true
+[submodule "vendor/taste-skill"]
+	path = vendor/taste-skill
+	url = https://github.com/Leonxlnx/taste-skill.git
+	shallow = true
+[submodule "vendor/understand-anything"]
+	path = vendor/understand-anything
+	url = https://github.com/Egonex-AI/Understand-Anything.git
+	shallow = true

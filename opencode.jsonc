@@ -1,0 +1,68 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  // superpowers: submodule, updated via update-skills.sh in this repo (absolute path; ~ isn't expanded)
+  "plugins": ["@dietrichgebert/ponytail", "/home/izyik/repos/03-1zyik/opencode/vendor/superpowers"],
+  "mcp": {
+    "servers": {
+      // Composio MCP
+      "composio": {
+        "type": "remote",
+        "url": "https://connect.composio.dev/mcp",
+        "headers": {
+          "x-consumer-api-key": "{file:~/.secrets/composio-key}",
+        },
+      },
+      // Firecrawl mcp for pulling AI formatted info and context
+      "firecrawl": {
+        "type": "remote",
+        "url": "https://mcp.firecrawl.dev/v2/mcp-oauth",
+      },
+      // Personal Github MCP (token in ~/.secrets/)
+      "github-1zyik": {
+        "type": "remote",
+        "url": "https://api.githubcopilot.com/mcp/",
+        "headers": {
+          "Authorization": "Bearer {file:~/.secrets/github-1zyik}",
+        },
+      },
+      // Work Github MCP (token in ~/.secrets/)
+      "github-sid": {
+        "type": "remote",
+        "url": "https://api.githubcopilot.com/mcp/",
+        "headers": {
+          "Authorization": "Bearer {file:~/.secrets/github-sid}",
+        },
+      },
+      // Testing out prembly MCP (OAuth sign-in on first connect)
+      "prembly": {
+        "type": "remote",
+        "url": "https://mcp.prembly.com/mcp",
+      },
+      // Sequential thinking for step-by-step reasoning
+      "sequential-thinking": {
+        "type": "local",
+        "command": [
+          "npx",
+          "-y",
+          "@modelcontextprotocol/server-sequential-thinking",
+        ],
+      },
+      // Exa for real-time web search and page fetching
+      "exa": {
+        "type": "remote",
+        "url": "https://mcp.exa.ai/mcp",
+        "headers": {
+          "x-api-key": "{file:~/.secrets/exa-api-key}",
+        },
+      },
+      // MongoDB Prod (read-only)
+      "sid-mongodb-prod": {
+        "type": "local",
+        "command": ["npx", "-y", "mongodb-mcp-server@latest", "--readOnly"],
+        "environment": {
+          "MDB_MCP_CONNECTION_STRING": "{file:~/.secrets/sid-mongo-prod}",
+        },
+      },
+    },
+  },
+}

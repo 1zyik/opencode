@@ -1,0 +1,7 @@
+# Local OpenCode service credentials: never commit
+service.json
+# Backups and editor leftovers
+*.bak
+*.pre-v2
+*.swp
+.DS_Store

@@ -1,0 +1,1 @@
+../vendor/impeccable/.opencode/commands/impeccable.md
