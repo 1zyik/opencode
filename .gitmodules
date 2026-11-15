@@ -45,3 +45,4 @@
 [submodule "vendor/logo-design-skill"]
 	path = vendor/logo-design-skill
 	url = https://github.com/kaankiziltug/logo-design-skill.git
+	shallow = true

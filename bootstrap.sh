@@ -18,6 +18,7 @@ sparse hallmark skills
 sparse impeccable .opencode
 sparse taste-skill skills
 sparse understand-anything understand-anything-plugin
+sparse logo-design-skill skills
 
 echo "→ link $CFG -> $R"
 if [ -L "$CFG" ]; then ln -sfn "$R" "$CFG"
