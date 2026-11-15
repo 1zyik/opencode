@@ -63,6 +63,11 @@
           "MDB_MCP_CONNECTION_STRING": "{file:~/.secrets/sid-mongo-prod}",
         },
       },
+      // Context7 for up-to-date library docs (OAuth sign-in on first connect)
+      "context7": {
+        "type": "remote",
+        "url": "https://mcp.context7.com/mcp/oauth",
+      },
     },
   },
 }

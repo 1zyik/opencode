@@ -42,3 +42,6 @@
 	path = vendor/understand-anything
 	url = https://github.com/Egonex-AI/Understand-Anything.git
 	shallow = true
+[submodule "vendor/logo-design-skill"]
+	path = vendor/logo-design-skill
+	url = https://github.com/kaankiziltug/logo-design-skill.git
