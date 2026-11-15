@@ -25,6 +25,8 @@ if [ -L "$CFG" ]; then ln -sfn "$R" "$CFG"
 elif [ -e "$CFG" ]; then mv "$CFG" "$CFG.pre-repo.$(date +%s)"; ln -s "$R" "$CFG"; echo "  existing config moved aside"
 else mkdir -p "$(dirname "$CFG")"; ln -s "$R" "$CFG"; fi
 ln -sfn "$R/vendor/understand-anything/understand-anything-plugin" "$HOME/.understand-anything-plugin"
+# Codex reads ~/.agents/skills; share the Context7 skill with it
+mkdir -p "$HOME/.agents/skills" && ln -sfn "$R/skills/context7-mcp" "$HOME/.agents/skills/context7-mcp"
 
 # Superpowers plugin path in opencode.jsonc is absolute (OpenCode doesn't expand ~)
 sed -i "s|\"/[^\"]*/vendor/superpowers\"|\"$R/vendor/superpowers\"|" "$R/opencode.jsonc"
