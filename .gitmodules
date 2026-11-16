@@ -46,3 +46,7 @@
 	path = vendor/logo-design-skill
 	url = https://github.com/kaankiziltug/logo-design-skill.git
 	shallow = true
+[submodule "vendor/humanize-writing-skill"]
+	path = vendor/humanize-writing-skill
+	url = https://github.com/lguz/humanize-writing-skill.git
+	shallow = true
