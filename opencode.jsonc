@@ -1,9 +1,21 @@
 {
   "$schema": "https://opencode.ai/config.json",
   // superpowers: submodule, updated via update-skills.sh in this repo (absolute path; ~ isn't expanded)
-  "plugins": ["@dietrichgebert/ponytail", "/home/izyik/repos/03-1zyik/opencode/vendor/superpowers"],
+  "plugins": [
+    "@dietrichgebert/ponytail",
+    "/home/izyik/repos/03-1zyik/opencode/vendor/superpowers",
+  ],
   "mcp": {
     "servers": {
+      // Grafana (uvx from `pipx install uv`; token in ~/.secrets/)
+      "sid-grafana": {
+        "type": "local",
+        "command": ["uvx", "mcp-grafana"],
+        "environment": {
+          "GRAFANA_URL": "https://grafana.tailfaed50.ts.net",
+          "GRAFANA_SERVICE_ACCOUNT_TOKEN": "{file:~/.secrets/sid-grafana-token}",
+        },
+      },
       // Composio MCP
       "composio": {
         "type": "remote",
