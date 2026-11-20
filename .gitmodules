@@ -14,14 +14,6 @@
 	path = vendor/diagram-design
 	url = https://github.com/cathrynlavery/diagram-design.git
 	shallow = true
-[submodule "vendor/hallmark"]
-	path = vendor/hallmark
-	url = https://github.com/Nutlope/hallmark.git
-	shallow = true
-[submodule "vendor/impeccable"]
-	path = vendor/impeccable
-	url = https://github.com/pbakaus/impeccable.git
-	shallow = true
 [submodule "vendor/security-audit-skill"]
 	path = vendor/security-audit-skill
 	url = https://github.com/cloudflare/security-audit-skill.git
@@ -34,17 +26,9 @@
 	path = vendor/superpowers
 	url = https://github.com/obra/superpowers.git
 	shallow = true
-[submodule "vendor/taste-skill"]
-	path = vendor/taste-skill
-	url = https://github.com/Leonxlnx/taste-skill.git
-	shallow = true
 [submodule "vendor/understand-anything"]
 	path = vendor/understand-anything
 	url = https://github.com/Egonex-AI/Understand-Anything.git
-	shallow = true
-[submodule "vendor/logo-design-skill"]
-	path = vendor/logo-design-skill
-	url = https://github.com/kaankiziltug/logo-design-skill.git
 	shallow = true
 [submodule "vendor/humanize-writing-skill"]
 	path = vendor/humanize-writing-skill

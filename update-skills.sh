@@ -5,7 +5,7 @@
 #   ./update-skills.sh --check  only report what's new, change nothing
 set -uo pipefail
 
-REPOS=(anatomy archify security-audit-skill impeccable diagram-design superpowers taste-skill hallmark caveman stop-slop understand-anything logo-design-skill humanize-writing-skill)
+REPOS=(anatomy archify security-audit-skill diagram-design superpowers caveman stop-slop understand-anything humanize-writing-skill)
 CHECK_ONLY=false; [[ "${1:-}" == "--check" ]] && CHECK_ONLY=true
 
 for name in "${REPOS[@]}"; do

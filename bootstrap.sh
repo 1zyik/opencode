@@ -14,11 +14,7 @@ echo "→ sparse checkouts for the large upstream repos (skill folders only)"
 sparse() { git -C "$R/vendor/$1" sparse-checkout set "${@:2}" >/dev/null && echo "  $1: ${*:2}"; }
 sparse archify archify
 sparse caveman skills src/plugins/opencode/commands
-sparse hallmark skills
-sparse impeccable .opencode
-sparse taste-skill skills
 sparse understand-anything understand-anything-plugin
-sparse logo-design-skill skills
 
 echo "→ link $CFG -> $R"
 if [ -L "$CFG" ]; then ln -sfn "$R" "$CFG"
